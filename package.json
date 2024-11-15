@@ -1,0 +1,47 @@
+{
+  "name": "strve-router",
+  "version": "5.6.0",
+  "description": "The official router for Strve.js",
+  "main": "dist/strve-router.esm.js",
+  "module": "dist/strve-router.esm.js",
+  "unpkg": "dist/strve-router.esm.js",
+  "jsdelivr": "dist/strve-router.esm.js",
+  "typings": "types/index.d.ts",
+  "files": [
+    "dist/*.js",
+    "types/index.d.ts"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsc && rollup -c"
+  },
+  "private": false,
+  "keywords": [
+    "strve",
+    "strvejs",
+    "strve-router",
+    "router",
+    "dom",
+    "mvvm",
+    "virtual dom",
+    "html",
+    "template",
+    "string"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strveJs/strve-router"
+  },
+  "author": "maomincoding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strveJs/strve-router/issues"
+  },
+  "homepage": "https://github.com/strveJs/strve-router#readme",
+  "devDependencies": {
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^2.57.0",
+    "typescript": "4.6.3"
+  }
+}
