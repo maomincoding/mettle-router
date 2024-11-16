@@ -1,6 +1,6 @@
 {
   "name": "amazed-router",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The official router for amazed.js",
   "main": "dist/amazed-router.esm.js",
   "module": "dist/amazed-router.esm.js",
