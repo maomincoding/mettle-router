@@ -4,7 +4,7 @@ const version = require('./package.json').version;
 
 const banner =
   '/*!\n' +
-  ` * Strve Router v${version}\n` +
+  ` * Amazed-router v${version}\n` +
   ` * (c) 2021-${new Date().getFullYear()} maomincoding\n` +
   ' * Released under the MIT License.\n' +
   ' */';
@@ -13,7 +13,7 @@ const config = {
   input: './lib/index.js',
   output: {
     banner,
-    file: './dist/strve-router.esm.js',
+    file: './dist/amazed-router.esm.js',
     format: 'esm',
   },
   plugins: [terser()],
@@ -21,7 +21,7 @@ const config = {
 
 const vars = {
   __VERSION__: version,
-  preventAssignment: true
+  preventAssignment: true,
 };
 config['plugins'].push(replace(vars));
 

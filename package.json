@@ -1,15 +1,13 @@
 {
   "name": "amazed-router",
-  "version": "0.0.1",
-  "description": "The official router for Strve.js",
-  "main": "dist/strve-router.esm.js",
-  "module": "dist/strve-router.esm.js",
-  "unpkg": "dist/strve-router.esm.js",
-  "jsdelivr": "dist/strve-router.esm.js",
-  "typings": "types/index.d.ts",
+  "version": "0.0.3",
+  "description": "The official router for amazed.js",
+  "main": "dist/amazed-router.esm.js",
+  "module": "dist/amazed-router.esm.js",
+  "unpkg": "dist/amazed-router.esm.js",
+  "jsdelivr": "dist/amazed-router.esm.js",
   "files": [
-    "dist/*.js",
-    "types/index.d.ts"
+    "dist/*.js"
   ],
   "scripts": {
     "tsc": "tsc",
@@ -17,9 +15,9 @@
   },
   "private": false,
   "keywords": [
-    "strve",
-    "strvejs",
-    "strve-router",
+    "amazed",
+    "amazedjs",
+    "amazed-router",
     "router",
     "dom",
     "mvvm",
@@ -30,14 +28,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/strveJs/strve-router"
+    "url": "https://github.com/maomincoding/amazed-router"
   },
   "author": "maomincoding",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/strveJs/strve-router/issues"
+    "url": "https://github.com/maomincoding/amazed-router/issues"
   },
-  "homepage": "https://github.com/strveJs/strve-router#readme",
+  "homepage": "https://github.com/maomincoding/amazed-router#readme",
   "devDependencies": {
     "@rollup/plugin-replace": "^5.0.2",
     "@rollup/plugin-terser": "^0.4.4",
