@@ -98,13 +98,13 @@ function linkTo(pathData: string | pathDataType) {
         global.path = pathData.path;
       } else {
         console.error(
-          '[amazed-router error]: the first parameter of function linkTo should have a param called path with string when it is an ordinary object'
+          '[mettle-router error]: the first parameter of function linkTo should have a param called path with string when it is an ordinary object'
         );
       }
     }
   } else {
     console.error(
-      '[amazed-router error]: the first parameter of function linkTo should be a string or a object'
+      '[mettle-router error]: the first parameter of function linkTo should be a string or a object'
     );
   }
 }

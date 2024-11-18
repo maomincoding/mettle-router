@@ -1,16 +1,16 @@
-# Amazed-router
+# Mettle-router
 
-The official router for amazed.js.
+The official router for mettle.js.
 
 ## Introduce
 
-Amazed-router is the official route manager of amazed.js. It is deeply integrated with the core of amazed.js, making it easy to build single-page applications.
+Mettle-router is the official route manager of mettle.js. It is deeply integrated with the core of mettle.js, making it easy to build single-page applications.
 
 Currently only supports Hash mode.
 
 ## Documentation
 
-To learn more about Amazed-router, check [its documentation](https://maomincoding.github.io/amazed-doc/tool/amazedRouter/).
+To learn more about Mettle-router, check [its documentation](https://maomincoding.github.io/mettle-doc/tool/mettleRouter/).
 
 ## License
 

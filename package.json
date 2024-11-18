@@ -1,11 +1,11 @@
 {
   "name": "mettle-router",
-  "version": "0.1.0",
-  "description": "The official router for amazed.js",
-  "main": "dist/amazed-router.esm.js",
-  "module": "dist/amazed-router.esm.js",
-  "unpkg": "dist/amazed-router.esm.js",
-  "jsdelivr": "dist/amazed-router.esm.js",
+  "version": "0.1.1",
+  "description": "The official router for mettle.js",
+  "main": "dist/mettle-router.esm.js",
+  "module": "dist/mettle-router.esm.js",
+  "unpkg": "dist/mettle-router.esm.js",
+  "jsdelivr": "dist/mettle-router.esm.js",
   "files": [
     "dist/*.js"
   ],
@@ -15,9 +15,9 @@
   },
   "private": false,
   "keywords": [
-    "amazed",
-    "amazedjs",
-    "amazed-router",
+    "mettle",
+    "mettlejs",
+    "mettle-router",
     "router",
     "dom",
     "mvvm",
@@ -28,14 +28,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/maomincoding/amazed-router"
+    "url": "https://github.com/maomincoding/mettle-router"
   },
   "author": "maomincoding",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maomincoding/amazed-router/issues"
+    "url": "https://github.com/maomincoding/mettle-router/issues"
   },
-  "homepage": "https://github.com/maomincoding/amazed-router#readme",
+  "homepage": "https://github.com/maomincoding/mettle-router#readme",
   "devDependencies": {
     "@rollup/plugin-replace": "^5.0.2",
     "@rollup/plugin-terser": "^0.4.4",
