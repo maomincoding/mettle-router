@@ -77,8 +77,8 @@ function isOrdinaryObject(obj: object) {
 }
 
 interface pathDataType {
-  path: string;
-  query: object;
+  path?: string;
+  query?: object;
 }
 
 function linkTo(pathData: string | pathDataType) {

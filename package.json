@@ -1,13 +1,15 @@
 {
   "name": "mettle-router",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "The official router for mettle.js",
   "main": "dist/mettle-router.esm.js",
   "module": "dist/mettle-router.esm.js",
   "unpkg": "dist/mettle-router.esm.js",
   "jsdelivr": "dist/mettle-router.esm.js",
+  "types": "types/index.d.ts",
   "files": [
-    "dist/*.js"
+    "dist",
+    "types"
   ],
   "scripts": {
     "tsc": "tsc",
