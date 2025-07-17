@@ -47,9 +47,7 @@ function initRouter(routes: any[], resetView: Function) {
     }
   }
 
-  return {
-    view,
-  };
+  return view();
 }
 
 function routerHash(path: string, routes: any[]) {
@@ -57,14 +55,12 @@ function routerHash(path: string, routes: any[]) {
     const item = routes[index];
     if (item.path === path) {
       if (global.isMounted) {
-        return global._template();
+        return global._template;
       }
-
       const newTemplate = item.template;
       global.isMounted = true;
       global._template = newTemplate;
-
-      return global._template();
+      return global._template;
     }
   }
 }
