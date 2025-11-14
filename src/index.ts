@@ -12,7 +12,7 @@ const global: globalType = {
   _template: null,
 };
 
-function initRouter(routes: any[], resetView: Function) {
+function initRouter(routes: any[], resetView: Function, routerContainer?: string) {
   if (typeof resetView === 'function') {
     window.addEventListener(
       'hashchange',
@@ -20,7 +20,7 @@ function initRouter(routes: any[], resetView: Function) {
         global.path = getCurrentPath();
         global.isMounted = false;
         const newTree = routerHash(global.path, routes);
-        resetView(newTree);
+        resetView(newTree, routerContainer);
       },
       false
     );

@@ -1,5 +1,5 @@
 declare const routerVersion: string;
-declare function initRouter(routes: any[], resetView: Function): Function;
+declare function initRouter(routes: any[], resetView: Function, routerContainer?: string): Function;
 interface pathDataType {
     path?: string;
     query?: object;
