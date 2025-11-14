@@ -1,6 +1,6 @@
 {
   "name": "mettle-router",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "The official router for mettle.js",
   "main": "dist/mettle-router.esm.js",
   "module": "dist/mettle-router.esm.js",

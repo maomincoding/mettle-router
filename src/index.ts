@@ -12,18 +12,22 @@ const global: globalType = {
   _template: null,
 };
 
+function hashChange(callback: (event: HashChangeEvent) => void) {
+  window.addEventListener('hashchange', callback, false);
+
+  return () => {
+    window.removeEventListener('hashchange', callback, false);
+  };
+}
+
 function initRouter(routes: any[], resetView: Function, routerContainer?: string) {
   if (typeof resetView === 'function') {
-    window.addEventListener(
-      'hashchange',
-      () => {
-        global.path = getCurrentPath();
-        global.isMounted = false;
-        const newTree = routerHash(global.path, routes);
-        resetView(newTree, routerContainer);
-      },
-      false
-    );
+    hashChange(() => {
+      global.path = getCurrentPath();
+      global.isMounted = false;
+      const newTree = routerHash(global.path, routes);
+      resetView(newTree, routerContainer);
+    });
   }
 
   function view() {
@@ -105,18 +109,6 @@ function linkTo(pathData: string | pathDataType) {
   }
 }
 
-function go(n: number) {
-  window.history.go(n);
-}
-
-function back() {
-  window.history.go(-1);
-}
-
-function forward() {
-  window.history.go(1);
-}
-
 interface objparse {
   [key: string]: string;
 }
@@ -173,4 +165,4 @@ function getBaseUrl() {
   return `${base}`;
 }
 
-export { initRouter, linkTo, go, back, forward, toParse, routerVersion };
+export { initRouter, linkTo, toParse, hashChange, routerVersion };
